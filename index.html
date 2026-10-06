@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>#٢٠٣٠_بلا_نقاب</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#faf6f1;--card:#fff;--ink:#2a2220;--muted:#6b5d58;--accent:#8a3b4f;--accent2:#c9a24a;--line:#e8ddd3;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1b1517;--card:#261d20;--ink:#f3e9e4;--muted:#b9a8a2;--accent:#e08aa0;--accent2:#d9b866;--line:#3a2d31}}
+:root[data-theme="dark"]{--bg:#1b1517;--card:#261d20;--ink:#f3e9e4;--muted:#b9a8a2;--accent:#e08aa0;--accent2:#d9b866;--line:#3a2d31}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Tajawal',Tahoma,Arial,sans-serif;line-height:1.9;font-size:17px}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+nav .wrap{display:flex;gap:22px;overflow-x:auto;padding:12px 20px;white-space:nowrap;font-weight:500}
+nav a{color:var(--muted);text-decoration:none}nav a:hover{color:var(--accent)}
+.hero{text-align:center;padding:64px 0 48px}
+.tag{display:inline-block;color:var(--accent);font-weight:800;font-size:clamp(34px,8vw,64px);line-height:1.3;direction:rtl}
+.hero p{color:var(--muted);max-width:560px;margin:14px auto 0}
+.count{direction:ltr;display:grid;grid-template-columns:repeat(4,1fr);gap:12px;max-width:520px;margin:32px auto 8px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 4px}
+.box b{display:block;font-size:clamp(28px,7vw,42px);color:var(--accent);line-height:1.2;font-weight:800}
+.box span{font-size:14px;color:var(--muted)}
+.cap{font-size:14px;color:var(--muted)}
+section{padding:40px 0;border-top:1px solid var(--line)}
+h2{font-size:28px;margin:0 0 18px;color:var(--accent);font-weight:800}
+.demand{display:flex;gap:16px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;margin-bottom:14px}
+.num{flex:none;min-width:84px;font-weight:800;color:var(--accent2)}
+.demand p{margin:0}
+.goal{background:var(--card);border-right:5px solid var(--accent2);border-radius:12px;padding:20px 22px}
+.goal p{margin:0 0 12px}
+.final{text-align:center;font-weight:700;font-size:20px;padding:24px 0 8px;color:var(--accent)}
+footer{text-align:center;color:var(--muted);font-size:14px;padding:32px 0 40px;border-top:1px solid var(--line)}
+@media(max-width:520px){.demand{flex-direction:column;gap:4px}}
+
+.bar{position:fixed;top:0;right:0;height:3px;width:0;background:var(--accent2);z-index:9}
+.rv{opacity:0;transform:translateY(18px);transition:.6s}.rv.in{opacity:1;transform:none}
+.demand{display:block;padding:0;overflow:hidden}
+.demand button{all:unset;box-sizing:border-box;width:100%;display:flex;align-items:center;gap:14px;padding:18px;cursor:pointer;font-family:inherit}
+.demand button:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.demand .t{flex:1;font-weight:700}
+.demand .ch{transition:.3s;color:var(--accent)}
+.demand.open .ch{transform:rotate(180deg)}
+.demand .body{max-height:0;overflow:hidden;transition:max-height .4s;padding:0 18px}
+.demand.open .body{padding-bottom:18px}
+.demand .body p{border-top:1px solid var(--line);padding-top:14px}
+.hint{color:var(--muted);font-size:14px;margin:-8px 0 16px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0}
+.fc{all:unset;box-sizing:border-box;cursor:pointer;perspective:700px;height:130px;display:block}
+.fc:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:16px}
+.fc i{display:block;position:relative;width:100%;height:100%;transition:transform .6s;transform-style:preserve-3d;font-style:normal}
+.fc.flip i{transform:rotateY(180deg)}
+.fc b,.fc u{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;border-radius:16px;padding:10px;backface-visibility:hidden;text-decoration:none;font-weight:700}
+.fc b{background:var(--card);border:1px solid var(--line);color:var(--accent)}
+.fc u{background:var(--accent);color:#fff;transform:rotateY(180deg)}
+.acts{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:26px}
+.btn{all:unset;box-sizing:border-box;cursor:pointer;font-family:inherit;font-weight:700;padding:12px 26px;border-radius:999px;border:2px solid var(--accent);color:var(--accent);transition:.2s}
+.btn.pri,.btn.on{background:var(--accent);color:#fff}
+.btn:focus-visible{outline:2px solid var(--accent2);outline-offset:3px}
+@media(max-width:520px){.cards{grid-template-columns:1fr}.fc{height:90px}}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+<div class="bar" id="bar"></div>
+<nav><div class="wrap"><a href="#top">الرئيسية</a><a href="#about">التعريف بالحملة</a><a href="#demands">مطالبنا</a><a href="#goal">غايتنا</a></div></nav>
+
+<header class="hero wrap" id="top">
+  <div class="tag">#٢٠٣٠_بلا_نقاب</div>
+  <p>حملة تطالب بتوضيح رسمي للأحكام المتعلقة بالنقاب وغطاء الوجه، وبحماية حق المرأة في قرار نابع من قناعتها لا من الخوف.</p>
+  <div class="count" id="count" aria-live="polite">
+    <div class="box"><b id="d">٠</b><span>يوم</span></div>
+    <div class="box"><b id="h">٠</b><span>ساعة</span></div>
+    <div class="box"><b id="m">٠</b><span>دقيقة</span></div>
+    <div class="box"><b id="s">٠</b><span>ثانية</span></div>
+  </div>
+  <div class="cap" id="cap">مدة رفع الحملة ومطالبنا</div>
+</header>
+
+<main class="wrap">
+<section id="about" class="rv">
+  <h2>التعريف بالحملة</h2>
+  <p>حملة مجتمعية تدعو إلى حظر النقاب وتنظيم غطاء الوجه ضمن إطار قانوني واضح، بما يواكب تطلعات المجتمع ويحفظ للمرأة أمنها وكرامتها.</p>
+  <p>نؤمن أن الانتقال إلى مجتمع بلا نقاب لا ينبغي أن يكون مصدرًا للصدام أو التوتر، بل تغييرًا واعيًا ومدروسًا يرافقه توعية مجتمعية، وخطاب ديني رصين، وتشريعات واضحة، وآليات فعّالة لحماية المرأة.</p>
+  <p>فالقرار التنظيمي لا يكتمل بمجرد إصداره، بل بنجاح المجتمع في استيعابه وتطبيقه دون أن تتحمل المرأة وحدها تبعاته.</p>
+</section>
+
+<section id="demands">
+  <h2>مطالبنا</h2>
+  <p class="hint">اضغطي على أي مطلب لقراءة تفاصيله</p>
+  <div class="demand rv"><button aria-expanded="false"><span class="num">أولًا</span><span class="t">حظر النقاب بشكل واضح ومنظم</span><span class="ch">▾</span></button><div class="body"><p>إصدار تنظيم رسمي يمنع ارتداء النقاب في الأماكن العامة، مع تحديد نطاق التطبيق والاستثناءات وآليات التنفيذ بوضوح.</p></div></div>
+  <div class="demand rv"><button aria-expanded="false"><span class="num">ثانيًا</span><span class="t">حماية المرأة من العنف والانتقام</span><span class="ch">▾</span></button><div class="body"><p>أي قرار بالحظر يجب أن يصاحبه نظام حماية فعّال للمرأة التي قد تتعرض للتهديد أو الضرب أو الاحتجاز أو الإكراه بسبب القرار.</p></div></div>
+  <div class="demand rv"><button aria-expanded="false"><span class="num">ثالثًا</span><span class="t">ردع الإكراه داخل الأسرة</span><span class="ch">▾</span></button><div class="body"><p>تجريم إجبار المرأة على ارتداء النقاب أو استخدام العنف والتهديد لإجبارها على مخالفة التنظيم.</p></div></div>
+  <div class="demand rv"><button aria-expanded="false"><span class="num">رابعًا</span><span class="t">عقوبات رادعة لمنتهكي حريتها</span><span class="ch">▾</span></button><div class="body"><p>وضع غرامات وعقوبات واضحة ورادعة على من يمارس العنف أو التهديد أو الإكراه أو الاحتجاز بحق المرأة بسبب لباسها أو قرارها الشخصي.</p></div></div>
+  <div class="demand rv"><button aria-expanded="false"><span class="num">خامسًا</span><span class="t">تطبيق تدريجي ومسؤول</span><span class="ch">▾</span></button><div class="body"><p>تطبيق القرار بطريقة مدروسة تراعي الواقع الاجتماعي، وتسبقها حملات توعية وحوار مجتمعي، لتقليل التوتر ومنع التصادم.</p></div></div>
+  <div class="demand rv"><button aria-expanded="false"><span class="num">سادسًا</span><span class="t">مواجهة توظيف الدين في قمع المرأة</span><span class="ch">▾</span></button><div class="body"><p>مواجهة الخطابات المتطرفة التي تستخدم الدين لتبرير الإكراه والعنف والتمييز ضد المرأة، وأن يكون المرجع في الأحكام الدينية الجهات الرسمية المختصة، لا الأفراد والجماعات.</p></div></div>
+  <div class="demand rv"><button aria-expanded="false"><span class="num">سابعًا</span><span class="t">توضيح الحكم الشرعي</span><span class="ch">▾</span></button><div class="body"><p>إطلاق توضيح رسمي شامل وموثوق لأحكام تغطية الوجه، يبيّن للناس بوضوح ما هو محل اتفاق وما هو محل اختلاف واجتهاد، ويضع حدًا للمعلومات المتضاربة والمبالغات.</p></div></div>
+</section>
+
+<section id="goal">
+  <h2>غايتنا</h2>
+  <p class="rv">ليست الصدام مع الدين ولا مع الأسرة. اضغطي على البطاقات:</p>
+  <div class="cards rv">
+    <button class="fc"><i><b>الطاعة</b><u>تُبنى على القناعة</u></i></button>
+    <button class="fc"><i><b>العبادة</b><u>تُبنى على الإيمان</u></i></button>
+    <button class="fc"><i><b>الأسرة</b><u>تُبنى على المحبة والاحترام</u></i></button>
+  </div>
+  <div class="final rv">امرأة تعيش بأمان وكرامة، وصاحبة قرار في حياتها.</div>
+  <div class="acts rv">
+    <button class="btn pri" id="shr">شاركي الحملة</button>
+  </div>
+</section>
+</main>
+
+<footer>#٢٠٣٠_بلا_نقاب</footer>
+
+<script>
+// تاريخ بداية الحملة (السنة-الشهر-اليوم بتوقيت الرياض) — عدّليه هنا
+var START = new Date("2026-09-30T00:00:00+03:00").getTime();
+function ar(n){return String(n).replace(/\d/g,function(x){return "٠١٢٣٤٥٦٧٨٩"[x]})}
+function tick(){
+  var t=Math.max(0,Math.floor((Date.now()-START)/1000));
+  document.getElementById("d").textContent=ar(Math.floor(t/86400));
+  document.getElementById("h").textContent=ar(Math.floor(t%86400/3600));
+  document.getElementById("m").textContent=ar(Math.floor(t%3600/60));
+  document.getElementById("s").textContent=ar(t%60);
+  setTimeout(tick,1000);
+}
+document.querySelectorAll('.demand button').forEach(function(b){b.addEventListener('click',function(){
+  var d=b.parentNode,o=d.classList.toggle('open'),bd=d.querySelector('.body');
+  b.setAttribute('aria-expanded',o);bd.style.maxHeight=o?bd.scrollHeight+'px':'0'})});
+document.querySelectorAll('.fc').forEach(function(c){c.addEventListener('click',function(){c.classList.toggle('flip')})});
+var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.15});
+document.querySelectorAll('.rv').forEach(function(e){io.observe(e)});
+addEventListener('scroll',function(){var h=document.documentElement;document.getElementById('bar').style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100||0)+'%'});
+document.getElementById('shr').addEventListener('click',function(){
+  var u=location.href,t='#٢٠٣٠_بلا_نقاب',b=this;
+  if(navigator.share){navigator.share({title:t,url:u}).catch(function(){})}
+  else if(navigator.clipboard){navigator.clipboard.writeText(t+' '+u).then(function(){b.textContent='تم نسخ الرابط ✓'}).catch(function(){})}
+});
+tick();
+</script>
+</body>
+</html>
